@@ -69,6 +69,7 @@ Le modèle **XGBoost** (utilisé dans ce projet) fonctionne sur le principe de l
 Nous avons aussi testé un **CNN (Réseau de Neurones)**. Contrairement aux arbres qui posent des questions (Oui/Non), le réseau de neurones broie les données à travers des couches mathématiques, cherchant des motifs non-linéaires invisibles à l'œil humain entre les symptômes et la maladie.
 
 ---
+<img width="1732" height="495" alt="téléchargement (2)" src="https://github.com/user-attachments/assets/fe2b7f57-4359-48b4-9b5f-d0fce90dc3d6" />
 
 ## 5. Analyse Approfondie : Évaluation (L'Heure de Vérité)
 
@@ -78,6 +79,7 @@ Comment interpréter notre score de **100% d'Accuracy** ?
 Au lieu d'un simple carré (2x2), nous avons une grille (3x3) pour les classes 0, 1 et 2.
 * **La Diagonale du Succès :** Tous nos patients se trouvent sur la diagonale (ex: Prédit High | Réel High).
 * **L'Absence d'Erreurs Hors-Diagonale :** Le modèle n'a jamais confondu un "Low" avec un "High".
+<img width="1615" height="1357" alt="téléchargement (1)" src="https://github.com/user-attachments/assets/8519a9a1-a2f4-48ad-add7-41d2714ea059" />
 
 ### B. Précision vs Rappel (Le Duo de Choc)
 Dans notre cas, les deux métriques sont à 1.00 (100%), ce qui est l'idéal théorique.
@@ -86,7 +88,8 @@ Dans notre cas, les deux métriques sont à 1.00 (100%), ce qui est l'idéal th�
 2.  **Rappel (Recall) :** "Est-ce que l'IA a détecté TOUS les cas graves ?"
     * Ici : 100%. Aucun patient à risque élevé n'est passé à travers les mailles du filet.
 
-### 💡 Le Coin de l'Expert (Scepticisme Scientifique)
+### 💡 Le Coin de l'Expert (Scep<img width="563" height="512" alt="téléchargement" src="https://github.com/user-attachments/assets/562f2c94-a7f4-4a47-89e1-00153443f5e6" />
+ticisme Scientifique)
 Obtenir 100% de précision sur le jeu de test est extrêmement rare en conditions réelles (données hospitalières bruitées).
 * **Hypothèse 1 :** Le dataset est "trop propre" ou synthétique.
 * **Hypothèse 2 :** Certaines variables (features) sont trop corrélées à la cible (ex: si une colonne "Stade du cancer" était présente dans les features, elle donnerait la réponse immédiatement). C'est ce qu'on appelle une **Data Leakage**.
